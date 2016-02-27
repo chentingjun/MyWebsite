@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Welcome to MyFirstWebsite ! ^_^</title>
+	<link rel="shortcut icon" href="./favicon.ico" >
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style type="text/css">
+    #menu ul li{
+    	list-style: none;
+    	color: antiquewhite;
+    	font-weight: bold;
+    	font-size: 18px;
+    	cursor: pointer;
+    	display: inline-block;
+    	text-align: center;
+    	padding: 50px;
+    }
+    </style>
 </head>
-<body>
-	<h1>hello</h1>
+<body style="background: url(./img/background.jpg) no-repeat fixed center;">
+	<div id="menu" style="position: fixed;top: 50%;left: 50%;">
+		<ul style="position: relative;margin-top: -50%;margin-left: -50%;display: inline-block;">
+			<li onclick="gotoPage('pc');">
+				<img src="./img/iconfont-pc.png" style="margin: 10px 30px;">
+				<div>PC</div>
+			</li>
+			<li onclick="gotoPage('mobile');">
+				<img src="./img/iconfont-mobile.png" style="margin: 10px 30px;">
+				<div>MOBILE</div>
+			</li>
+			<li onclick="gotoPage('demo');">
+				<img src="./img/iconfont-iconother.png" style="margin: 10px 30px;">
+				<div>DEMO</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div style="position: fixed;right: 30px;top: 30px;">
+		<img src="./img/iconfont-jianli.png" style="width: 32px;"> <a href="./data/myself.html" style="color: aquamarine;">预览简历</a>
+		<img src="./img/iconfont-xiazaijianli.png" style="width: 32px;"> <a href="./data/myself.doc" style="color: aquamarine;">下载简历</a>
+	</div>
+
+
+	<script type="text/javascript" src="./js/public.js"></script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>
