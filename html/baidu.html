@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度一下，你就知道</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.top{
+		padding: 15px;
+		overflow: hidden;
+	}
+	.toptip{
+		float: right;
+		list-style-type: none;
+		cursor: default;
+	}
+	.toptip li{
+		display: inline;
+		margin: 0 5px;
+		font-weight: bold;
+		text-decoration: underline;
+		font-size: 12px;
+		cursor: pointer;
+	}
+	.toptip li a{
+		color:black;
+	}
+	.toptip li a:hover{
+		color:blue;
+	}
+	.toptip li:hover{
+		color:blue;
+	}
+	.toptip li:last-child{
+		font-weight: normal;
+		padding: 5px;
+		margin-left: 10px;
+		background-color: #3385ff;
+		color: white;
+		text-decoration: none;
+	}
+	.toptip li:last-child:hover{
+		background-color: white;
+		color: black;
+	}
+	.search_input{
+		height: 23px;
+		width: 486px;
+		border: 1px solid #ccc;
+		border-right: 0;
+		outline: none;
+		padding: 5px;
+	}
+	.search_input:hover{
+		border: 1px solid #3385ff;
+		border-right: 0;
+	}
+	.search_btn{
+		border: 0;
+		background-color: #3385ff;
+		color: white;
+		padding: 10px 20px;
+		margin-left: -10px;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<div class="top">
+		<ul class="toptip">
+			<li><a href="http://www.nuomi.com/">糯米</a></li>
+			<li><a href="http://news.baidu.com">新闻</a></li>
+			<li><a href="http://www.hao123.com">hao123</a></li>
+			<li><a href="http://map.baidu.com">地图</a></li>
+			<li><a href="http://v.baidu.com">视频</a></li>
+			<li><a href="http://tieba.baidu.com">贴吧</a></li>
+			<li style="font-weight: normal;">登录</li>
+			<li style="font-weight: normal;">设置</li>
+			<li>更多产品</li>
+		</ul>
+	</div>
+	<div style="text-align: center;margin-top: 50px;">
+		<div>
+			<img src="https://www.baidu.com/img/bd_logo1.png" style="width: 270px;height: 129px;"> 
+		</div>
+		<div style="margin-top: 20px;">
+			<input type="text" class="search_input"></input>
+			<button class="search_btn" onclick="gobaidu()">百度一下</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function gobaidu(){
+		location.href = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=" + document.getElementsByClassName("search_input")[0].value;
+	}
+	</script>
+</body>
+</html>

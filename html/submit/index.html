@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.list-none{
+		list-style: none;
+	}
+	.list-none li{
+		font-size: 24px;
+		margin: 30px;
+	}
+	.form-name{
+		display: inline-block;
+		text-align: right;
+		width: 20%;
+	}
+	.form-name span{
+		color:red;
+	}
+	.form-name + input[type=text]{
+		width: 300px;
+		height: 30px;
+		font-size: 18px;
+		text-indent: 5px;
+	}
+
+	.form-name + input[type=checkbox]{
+		width: 15px;
+		height: 15px;
+		margin-right: 5px;
+	}
+	.form-name + input[type=button]{
+		width: 300px;
+		height: 30px;
+		background-color: mediumseagreen;
+		color: white;
+		border: 0;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+
+	#contain
+	</style>
+</head>
+<body>
+	<div style="position: relative;width: 90%;min-width: 1200px;margin-top: 5%;">
+		<div style="width: 20%;float: left;text-align: right;">
+			<ul class="list-none" style="font-weight: bold;">
+				<li><span style="padding: 5px;border-bottom: 5px solid green;">企业用户</span></li>
+				<li><span style="padding: 5px;">个人用户</span></li>
+			</ul>
+		</div>
+		<div style="width: 80%;float: right;">
+			<ul class="list-none">
+				<li> <div class="form-name"><span>*</span>用户名:</div> <input type="text" /> </li>
+				<li> <div class="form-name"><span>*</span>请设置密码:</div> <input type="text" /> </li>
+				<li> <div class="form-name"><span>*</span>请确认密码:</div> <input type="text" /> </li>
+				<li> 
+					<div class="form-name"><span>*</span>验证手机:</div> 
+					<input type="text" /> <span style="color: #ccc;font-size: 14px;">或</span> <a href="javascript:void(0);" style="font-size: 14px;">验证邮箱</a>
+				</li>
+				<li> <div class="form-name"><span>*</span>验证码:</div> <input type="text" /> </li>
+				<li> 
+					<div class="form-name"><span>*</span>短信验证码:</div> 
+					<input type="text" style="width: 140px;" /> 
+					<input type="button" value="获取短信验证码" style="width: 140px;height: 32px;border: 1px solid #ccc;" />
+				</li>
+				<li> <div class="form-name"></div> <input type="checkbox" id="agree" /><label for="agree">我已阅读并同意</label> </li>
+				<li> <div class="form-name"></div> <input type="button" value="立即注册" /> </li>
+			</ul>
+		</div>
+		<div style="position: absolute;top: 30px;right: 30px;width: 200px;height: 300px;text-align: center;">
+			<p style="font-size: 22px;">也可使用以下账号<br />简单注册快人一步</p>
+			<p style="margin: 20px 0;cursor: pointer;"> <img src="sinalogo.png"> </p>
+			<p style="margin: 20px 0;cursor: pointer;"> <img src="qqlogo.png"> </p>
+		</div>
+	</div>
+</body>
+</html>
