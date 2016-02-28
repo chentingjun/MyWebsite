@@ -5,3 +5,26 @@
 a{
 	text-decoration: none;
 }
+.hr{
+	border-color:cadetblue;
+}
+
+
+/* demo style */
+.demo-title{
+	padding-top: 20px;
+}
+.demo-pre{
+	background-color: black;
+	color:antiquewhite;
+	margin-bottom: 30px;
+}
+#jiugong ul{
+	width: 500px;
+}
+#jiugong li{
+	margin: 5px;
+}
+#jiugong .mengceng{
+	background-color:black;
+}

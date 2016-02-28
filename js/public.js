@@ -1,4 +1,5 @@
-var ROOTPATH = "http://chentingjun.github.io/MyWebsite/";/*根目录*/
+var ROOTPATH = "./";/*根目录*/
+/*var ROOTPATH = "http://chentingjun.github.io/MyWebsite/";根目录*/
 
 var HTMLPATH = ROOTPATH + "html/";/*html目录*/
 
