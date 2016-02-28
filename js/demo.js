@@ -15,7 +15,6 @@ $(function(){
 			}else{
 				$("#gotop").hide();
 			}
-			/* Act on the event */
 		});
 		$("#jiugong .jiugongbtn").on("click",function(){
 			var img = $("#jiugong .jiugongbtn img");
@@ -23,19 +22,32 @@ $(function(){
 				goTurn(true);
 				console.log(speedpicker);
 				img.attr("src","../img/iconfont-zanting.png");
+				img.css({
+					"opacity": '0',
+					"cursor": 'auto'
+				});
 			}else{
-				goTurn(false);
 				console.log(speedpicker);
-				img.attr("src","../img/iconfont-kaishi.png");
+				if(speedpicker <= 100){
+					goTurn(false);
+					img.attr("src","../img/iconfont-kaishi.png");
+				}
 			}
 		})
+		/*图片轮转列表*/
 		pictruelist();
 	}
 
 	/*九宫格转盘 #jiugong*/
 	function goTurn(flag){
 		if(flag){
-			speedpicker = Math.abs(speedpicker - 50 || 100);
+			if(speedpicker <= 100){
+				$("#jiugong .jiugongbtn img").css({
+					"opacity": '1',
+					"cursor": 'pointer'
+				});
+			}
+			speedpicker = Math.abs(speedpicker - 45 || 100);
 			gotruepicker = setInterval(function(){
 				var num = $("#jiugong .mengceng").data("num");
 				$("#jiugong .mengceng").removeClass('mengceng');
@@ -45,8 +57,9 @@ $(function(){
 				goTurn(true);
 			},speedpicker);
 		}else{
-			speedpicker = Math.abs(speedpicker + 50 || 100);
+			speedpicker = Math.abs(speedpicker + 45 || 100);
 			if(speedpicker > 550){
+				speedpicker = 500;
 				clearInterval(gotruepicker);
 			}else{
 				clearInterval(gotruepicker);
