@@ -9,7 +9,9 @@ a{
 	border-color:cadetblue;
 }
 
-
+.clear{
+	clear:both;
+}
 /* demo style */
 .demo-title{
 	padding-top: 20px;
@@ -27,4 +29,35 @@ a{
 }
 #jiugong .mengceng{
 	background-color:black;
+}
+#lunzhuan ul{
+	width: 10000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#lunzhuan ul li img{
+	width: 100px;
+	cursor: pointer;
+}
+
+.pre{
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.my-pre{
+	position: relative;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }

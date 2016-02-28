@@ -32,6 +32,10 @@
                 <h2 href="#bootstrap"> <a href="#jiugong">九宫格转盘</a> </h2>
                 <hr class="hr" />
             </li>
+            <li>
+                <h2 href="#bootstrap"> <a href="#lunzhuan">图片轮转</a> </h2>
+                <hr class="hr" />
+            </li>
 		</ul>
 	</div>
     
@@ -132,17 +136,40 @@
     </div>
     <div id="jiugong">
         <h3>九宫格转盘</h3>
-        <ul class="list-inline">
-            <li class="mengceng" data-num="1"> <img src="../img/iconfont-pc.png"> </li>
-            <li data-num="2"> <img src="../img/iconfont-mobile.png"> </li>
-            <li data-num="3"> <img src="../img/iconfont-iconother.png"> </li>
-            <li data-num="4"> <img src="../img/iconfont-mobile.png"> </li>
-            <li data-num="5" class="jiugongbtn" style="cursor: pointer;text-align: center;"> <img src="../img/iconfont-kaishi.png" style="width: 50%;"> </li>
-            <li data-num="6"> <img src="../img/iconfont-pc.png"> </li>
-            <li data-num="7"> <img src="../img/iconfont-iconother.png"> </li>
-            <li data-num="8"> <img src="../img/iconfont-pc.png"> </li>
-            <li data-num="9"> <img src="../img/iconfont-mobile.png"> </li>
-        </ul>
+        <div class="my-pre" style="text-align: center;">
+            <ul class="list-inline" style="display: inline-block;">
+                <li class="mengceng" data-num="1"> <img src="../img/iconfont-pc.png"> </li>
+                <li data-num="2"> <img src="../img/iconfont-mobile.png"> </li>
+                <li data-num="3"> <img src="../img/iconfont-iconother.png"> </li>
+                <li data-num="4"> <img src="../img/iconfont-mobile.png"> </li>
+                <li data-num="5" class="jiugongbtn" style="cursor: pointer;text-align: center;"> <img src="../img/iconfont-kaishi.png" style="width: 50%;"> </li>
+                <li data-num="6"> <img src="../img/iconfont-pc.png"> </li>
+                <li data-num="7"> <img src="../img/iconfont-iconother.png"> </li>
+                <li data-num="8"> <img src="../img/iconfont-pc.png"> </li>
+                <li data-num="9"> <img src="../img/iconfont-mobile.png"> </li>
+            </ul>
+            <div class="result" style="background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; padding: 10px; display: inline-block; position: relative; bottom: 130px;margin-left: 100px;">
+                <img src="../img/iconfont-pc.png" style="width: 100px;margin: 20px;">
+            </div>
+        </div>
+    </div>
+    <div id="lunzhuan">
+        <h3>图片轮转</h3>
+        <div class="my-pre">
+            <div id="imgbox" style="width: 450px;position: relative;height: 150px;line-height: 150px;overflow: hidden;margin: 0 auto;">
+                <ul class="list-inline">
+                    <li><img src="../img/iconfont-pc.png"></li>
+                    <li><img src="../img/iconfont-mobile.png"></li>
+                    <li><img src="../img/iconfont-iconother.png"></li>
+                    <li><img src="../img/iconfont-caidan.png"></li>
+                    <li><img src="../img/iconfont-jianli.png"></li>
+                    <li><img src="../img/iconfont-kaishi.png"></li>
+                    <li><img src="../img/iconfont-xiazaijianli.png"></li>
+                    <li><img src="../img/iconfont-zanting.png"></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
     </div>
 
     <div style="position: fixed;bottom: 50px;right: 50px;display: none;padding: 20px;background-color:white;" id="gotop">
