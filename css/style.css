@@ -17,9 +17,13 @@ a{
 	padding-top: 20px;
 }
 .demo-pre{
-	background-color: black;
-	color:antiquewhite;
-	margin-bottom: 30px;
+	position: relative;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	min-width: 900px;
+	overflow: auto;
 }
 #jiugong ul{
 	width: 500px;
@@ -41,23 +45,29 @@ a{
 	cursor: pointer;
 }
 
-.pre{
-	display: block;
-	padding: 9.5px;
-	margin: 0 0 10px;
-	font-size: 13px;
-	line-height: 1.42857143;
-	color: #333;
-	word-break: break-all;
-	word-wrap: break-word;
-	background-color: #f5f5f5;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+.flex-box{
+	display: flex;
+	margin: 10px 0;
 }
-
-.my-pre{
-	position: relative;
-	background-color: #f5f5f5;
+.flex-pic{
+	display: flex;
+	flex: 0 0 auto;
+	margin: 0 10px;
+	width: 120px;
+	height: 120px;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+	background-color: white;
+	box-shadow: inset 8px 0 1px #aaa,
+				inset -8px 0 1px #777,
+				inset 0 8px 1px #eee,
+				inset 0 -8px 1px #ccc;
+	border-radius: 10%;
+}
+.flex-circle{
+	display: flex;
+	width: 24px;
+	height: 24px;
+	margin: 8px;
+	background-color: black;
+	border-radius: 50%;
 }
